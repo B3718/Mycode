@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
+
 #define MAXSIZE 10
 #define OK 0
 #define ERROR -1
@@ -12,34 +13,34 @@ typedef struct sqList {
 	int length;
 }Sqlist,*pSqlist;
 
-//¹¹ÔìÒ»¸ö¿ÕµÄÏßĞÔ±í
+//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½Ô±ï¿½
 int initList(pSqlist);
 
-//Ïú»ÙÏßĞÔ±í
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½
 void destroyList(pSqlist);
 
-//Çå¿ÕÏßĞÔ±í
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½
 void clearList(pSqlist);
 
-//ÅĞ¿Õ
+//ï¿½Ğ¿ï¿½
 _Bool listEmpty(pSqlist);
 
-//·µ»Ø±íÖĞÔªËØ¸öÊı
+//ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½Ôªï¿½Ø¸ï¿½ï¿½ï¿½
 int listLength(pSqlist);
 
-//ÓÃe·µ»Ø±íÖĞµÚi¸öÔªËØ
+//ï¿½ï¿½eï¿½ï¿½ï¿½Ø±ï¿½ï¿½Ğµï¿½iï¿½ï¿½Ôªï¿½ï¿½
 int getElem(pSqlist, int, ElemType *);
 
-//·µ»ØµÚÒ»¸öÓë´«ÈëÖµÏàÍ¬µÄÔªËØµÄÎ»ÖÃ
+//ï¿½ï¿½ï¿½Øµï¿½Ò»ï¿½ï¿½ï¿½ë´«ï¿½ï¿½Öµï¿½ï¿½Í¬ï¿½ï¿½Ôªï¿½Øµï¿½Î»ï¿½ï¿½
 int locateElem(pSqlist, ElemType);
 
-//²åÈëÒ»¸öÔªËØ
+//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
 void listInsert( pSqlist, ElemType, int);
 
-//¸ù¾İÎ»ÖÃÉ¾³ıÒ»¸öÔªËØ
+//ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½É¾ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
 void deletElem(pSqlist, int);
 
-//±éÀú´òÓ¡
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡
 int printList(pSqlist);
 
 
